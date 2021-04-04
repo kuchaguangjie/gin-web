@@ -49,11 +49,12 @@ mysql:
   # 用户名
   username: root
   # 密码
-  password: root
+  password: 123456
   # 数据库名
   database: gin_web
   # 主机地址(地址改为docker内网地址, 参见gin-web-docker项目docker-compose.yml配置)
-  host: docker-mysql
+#  host: docker-mysql
+  host: 127.0.0.1
   # 端口
   port: 3306
   # 连接字符串查询参数
@@ -69,7 +70,8 @@ mysql:
 
 redis:
   # 主机地址(地址改为docker内网地址, 参见gin-web-docker项目docker-compose.yml配置)
-  host: docker-redis
+#  host: docker-redis
+  host: 127.0.0.1
   # 端口
   port: 6379
   # 密码(默认为空)
