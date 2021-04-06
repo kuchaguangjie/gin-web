@@ -53,7 +53,7 @@ mysql:
   # 数据库名
   database: gin_web
   # 主机地址(地址改为docker内网地址, 参见gin-web-docker项目docker-compose.yml配置)
-#  host: docker-mysql
+  #  host: docker-mysql
   host: 127.0.0.1
   # 端口
   port: 3306
@@ -67,6 +67,25 @@ mysql:
   charset: utf8mb4
   # 字符集(utf8mb4_general_ci速度比utf8mb4_unicode_ci快些)
   collation: utf8mb4_general_ci
+
+pg:
+  # 用户名
+  username: postgres
+  # 密码
+  password: 123456
+  # 数据库名
+  database: gin_web
+  # 主机地址(地址改为docker内网地址, 参见gin-web-docker项目docker-compose.yml配置)
+  #  host: docker-mysql
+  host: 127.0.0.1
+  # 端口
+  port: 5432
+  # 连接字符串查询参数
+  query:
+  # 是否打印日志
+  log-mode: true
+  # 数据库表前缀(无需再末尾添加下划线, 程序内部自动处理)
+  table-prefix: tb
 
 redis:
   # 主机地址(地址改为docker内网地址, 参见gin-web-docker项目docker-compose.yml配置)

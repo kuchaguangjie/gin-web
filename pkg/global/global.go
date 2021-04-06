@@ -25,6 +25,8 @@ var (
 	Log *zap.SugaredLogger
 	// mysql实例
 	Mysql *gorm.DB
+	// pg实例
+	Pg *gorm.DB
 	// redis实例
 	Redis *redis.Client
 	// cabin实例
